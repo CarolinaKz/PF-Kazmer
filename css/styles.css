@@ -143,6 +143,14 @@ label {
     background-image: url('https://images.pexels.com/photos/614077/pexels-photo-614077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
 }
 
+.fraseParallax {
+    font-size: 4rem;
+    font-style: italic;
+}
+
+
+/* FRASE INDEX */
+
 .texto{
 	padding: 5%;
 	width: 90%
@@ -152,10 +160,6 @@ label {
     font-size: 2rem;
 }
 
-.fraseParallax {
-    font-size: 4rem;
-    font-style: italic;
-}
 
 /*FORMULARIO*/
 
@@ -198,7 +202,13 @@ label {
     
 }
 
-.footer .redes a img {
+.footer .redesFooter a img {
     width: 4rem;
     margin-right: 1rem;
+}
+
+
+.grillaIndex {
+    display: grid;
+    
 }
