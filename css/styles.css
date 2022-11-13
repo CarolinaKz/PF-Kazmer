@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/old_wall.png);
+}
+
+nav {
+    margin-top: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+
+/*MENU DE NAVEGACION*/
+
+.navegacionFlex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin: 1rem;
+    width: 100%; 
+    background-color: black;
+    
+}
+
+.navegacionFlex ul {
+    display: flex;
+    gap: 10rem;
+    font-size: 1.5rem;
+    
+}
+
+.navegacionFlex a {
+    color:#fcfcfc;
+    padding: 2rem;
+
+} 
+
+.navegacionFlex li:hover a {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+
+.headerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:0;
+} 
+
+
+/*IMAGENES*/
+
+.headerFlex img {   
+    width: 250px;
+} /*LOGO*/
+
+.imagenesGalerias {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagenesGalerias img {
+    width: 40rem;
+    margin: 2rem;
+    order: 4;
+    
+}
+
+/*TITULOS*/
+
+.titulos {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.subtitulos {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #f4f4f4;
+    background-color: black;
+    padding: 1rem;
+    margin-right: 120rem;
+}
+
+
+/*PARALLAX*/
+
+.parallas .main .texto{margin:0 auto}
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:30rem;
+	max-width: 100%;
+	position: relative
+}
+
+.textoInterior{
+	color:#fff;
+	font-size: 2rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top:40%;
+	width: 80%
+}
+	
+.imgParallax {
+    background-image: url('https://images.pexels.com/photos/614077/pexels-photo-614077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+}
+
+.texto{
+	padding: 5%;
+	width: 90%
+}
+
+.texto p {
+    font-size: 2rem;
+}
+
+.fraseParallax {
+    font-size: 4rem;
+    font-style: italic;
+}
+
+/*FORMULARIO*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textForm {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botonEnviar {
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color:#fcfcfc;
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+    padding: 3rem;
+    bottom: 1rem;
+    background-color:#fcfcfc;
+}
+
+.footer .declaracion {
+    text-align: center;
+    color: #000000;
+    
+}
+
+.footer .redes a img {
+    width: 4rem;
+    margin-right: 1rem;
+}
