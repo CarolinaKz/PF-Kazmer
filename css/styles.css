@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -29,17 +33,14 @@ h1 {
 }
 
 p {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 label {
     font-size: 1.6rem;
 }
 
-img {
-    max-width: 100%;
-}
+
 
 /*MENU DE NAVEGACION Y HEADER*/
 
@@ -146,7 +147,7 @@ img {
 }
 
 .fraseParallax {
-    font-size: 4rem;
+    font-size: 5rem;
     font-style: italic;
 }
 
@@ -154,8 +155,12 @@ img {
 /* FRASE INDEX */
 
 .fraseIndex{
+    
+    margin-top: 10rem;
 	padding: 5%;
 	width: 90%
+    
+    
 }
 
 .fraseIndex p {
@@ -191,28 +196,29 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
     position: relative;
-    padding: 3rem;
-    bottom: 1rem;
-    background-color:#f0f0f0;
-}
-
-.footer .declaracion {
-    text-align: center;
-    color: #000000;
-    
+    padding: 1.5rem;
+    margin-bottom: 0;
+    background-color: #3e5641;
 }
 
 .footer .redesFooter a img {
     width: 4rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+
+}
+
+.footer .declaracion {
+    margin-top: 2rem;
 }
 
 
 /* GRILLA INDEX */
 
 .grillaIndex {
+    width: 100%;
     display: grid;
     grid-template-areas: 
     "header header header"
