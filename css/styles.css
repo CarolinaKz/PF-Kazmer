@@ -125,7 +125,7 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height:50rem;
+	height:60rem;
 	max-width: 100%;
 	position: relative
 }
@@ -195,7 +195,7 @@ img {
     position: relative;
     padding: 3rem;
     bottom: 1rem;
-    background-color:#fcfcfc;
+    background-color:#f0f0f0;
 }
 
 .footer .declaracion {
@@ -218,13 +218,11 @@ img {
     "header header header"
     "parallax parallax parallax"
     "frase frase frase"
-    "redes redes redes"
     "footer footer footer";
     
     grid-template-columns: repeat(1, 1fr);
 
 }
-
 
 
 header {
@@ -237,10 +235,6 @@ div .main {
 
 div .fraseIndex {
     grid-area: frase;
-}
-
-div .redesIndex {
-    grid-area: redes;
 }
 
 footer {
