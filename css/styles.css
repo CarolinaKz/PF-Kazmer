@@ -155,7 +155,6 @@ label {
 /* FRASE INDEX */
 
 .fraseIndex{
-    
     margin-top: 10rem;
 	padding: 5%;
 	width: 90%
@@ -241,6 +240,7 @@ div .main {
 
 div .fraseIndex {
     grid-area: frase;
+    
 }
 
 footer {
