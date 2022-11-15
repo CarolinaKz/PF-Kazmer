@@ -55,8 +55,9 @@ label {
 
 .navegacionFlex ul {
     display: flex;
-    gap: 10rem;
+    gap: 5rem;
     font-size: 1.5rem;
+    margin-left: 5rem;
     
 }
 
@@ -119,7 +120,9 @@ label {
 
 /*PARALLAX*/
 
-.parallas .main .texto{margin:0 auto}
+.parallas .main .texto {
+    margin:0 auto
+}
 
 .parallax{
 	background-attachment: fixed;
@@ -133,7 +136,6 @@ label {
 
 .textoInterior{
 	color:#fff;
-	font-size: 2rem;
 	font-weight: bold;
 	left: 10%;
 	position: absolute;
@@ -156,10 +158,9 @@ label {
 
 .fraseIndex{
     margin-top: 10rem;
+    margin-bottom: 10rem;
 	padding: 5%;
 	width: 90%
-    
-    
 }
 
 .fraseIndex p {
@@ -172,6 +173,7 @@ label {
 .formulario {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -194,12 +196,11 @@ label {
 .footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 10rem;
-    position: relative;
-    padding: 1.5rem;
-    margin-bottom: 0;
     background-color: #3e5641;
+    padding: 3rem;
+    margin-bottom: 0;
 }
 
 .footer .redesFooter a img {
@@ -213,38 +214,5 @@ label {
     margin-top: 2rem;
 }
 
-
-/* GRILLA INDEX */
-
-.grillaIndex {
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "parallax parallax parallax"
-    "frase frase frase"
-    "footer footer footer";
-    
-    grid-template-columns: repeat(1, 1fr);
-
-}
-
-
-header {
-    grid-area: header;
-}
-
-div .main {
-    grid-area: parallax;
-}
-
-div .fraseIndex {
-    grid-area: frase;
-    
-}
-
-footer {
-    grid-area: footer;
-}
 
 
