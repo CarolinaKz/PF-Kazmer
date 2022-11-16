@@ -54,18 +54,20 @@ label {
     gap: 5rem;
     font-size: 1.5rem;
     margin-left: 5rem;
+    margin-top: 1rem;
     
 }
 
 .navegacionFlex a {
     color: #282b28;
-    padding: 2rem;
+    padding: 1.5rem;
 
 } 
 
+
 .navegacionFlex li:hover a {
-    background-color: #f4f4f4;
-    color: black;
+    color: #a1a1a1;
+    transition: all .5s;
 }
 
 
@@ -155,7 +157,11 @@ label {
 }
 
 
-/* FRASE INDEX */
+/* CONTENIDO INDEX */
+
+.contenidoIndex img {
+    width: 400px;
+}
 
 .fraseIndex{
     grid-area: frase;
@@ -244,11 +250,5 @@ label {
         align-items: center;
         row-gap: 4rem;
     }
-
-
-
-
-
     
 }
-
