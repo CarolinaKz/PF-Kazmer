@@ -25,7 +25,7 @@ a {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 p {
@@ -37,37 +37,16 @@ label {
 }
 
 
+/*TEXTO*/
 
-/*MENU DE NAVEGACION Y HEADER*/
-
-/* .navegacionFlex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-}
-
-.navegacionFlex ul {
-    display: flex;
-    gap: 5rem;
-    font-size: 1.5rem;
-    margin-left: 5rem;
+.titulos {
+    text-align: center;
     margin-top: 1rem;
-
-}
-
-.navegacionFlex a {
-    color: #282b28;
-    padding: 1.5rem;
-
+    margin-bottom: 2rem;
 }
 
 
-.navegacionFlex li:hover a {
-    color: #a1a1a1;
-    transition: all .5s;
-} */
-
+/* HEADER */
 
 .header {
     grid-area: header;
@@ -92,7 +71,6 @@ label {
     order: 4;
     object-fit: cover;
     filter: opacity(.7)
-
 }
 
 .imagenesGalerias img:hover {
@@ -100,13 +78,31 @@ label {
     transition: all .5s;
 }
 
+@media screen and (max-width: 765px) {
 
-/*TITULOS*/
+    #carouselExampleFade{
+        display: none;
+    }
+    
+}
 
-.titulos {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+@media screen and (max-width: 768px){
+
+    .imagenesGalerias img {
+        filter: none;
+    }
+    
+}
+
+
+/* CARRUSEL */
+
+#carouselExampleFade {
+    padding: 2.5rem;
+}
+
+.carousel-item img {
+    object-fit: cover;
 }
 
 
@@ -125,8 +121,6 @@ label {
 	height:60rem;
 	max-width: 100%;
 	position: relative
-
-
 }
 
 .textoInterior{
@@ -194,11 +188,8 @@ label {
 /*FORMULARIO*/
 
 .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    margin: 6rem;
+    padding: 3rem;
 }
 
 .textForm {
@@ -209,9 +200,16 @@ label {
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    font-size: 1.2rem;
     color:#fcfcfc;
     background-color: #000000;
     font-family: 'Montserrat', sans-serif;
+}
+
+.botonEnviar:hover {
+    color: #000;
+    background-color: #fcfcfc;
+    transition: all .2s;
 }
 
 
@@ -222,7 +220,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #3e5641;
+    background-color: #71B48D;
     padding: 3rem;
     margin-bottom: 0;
     grid-area: footer;
@@ -250,12 +248,12 @@ label {
     "contenido"
     "footer";
 
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: auto 600px auto 150px;
 
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
 
 .contenidoIndex img {
     display: none;
@@ -263,7 +261,8 @@ label {
 
 }
 
-@media screen and (max-width: 645px){
+@media screen and (max-width: 645px) {
+
 
     .footer .redesFooter a img {
         width: 3rem;
@@ -277,5 +276,41 @@ label {
         display: none;
     }
 
+    h1 {
+        font-size: 1.8rem;
+    }
+
 }
 
+/* VERSION MOVIL INDEX Y MEDIA QUERIES */
+
+.versionMovil {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.versionMovil a {
+    padding: 5rem;
+    margin: 3rem;
+}
+.versionMovil ul li a {
+    background-color: #86CB92;
+}
+
+
+@media screen and (min-width: 646px) {
+
+    .versionMovil {
+        display: none;
+    }
+}
+
+
+/* HAMBURGER BUTTON */
+
+.navbar-toggler {
+    padding: 1rem;
+}
