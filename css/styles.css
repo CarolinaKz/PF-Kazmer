@@ -220,7 +220,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #71B48D;
+    background-image: linear-gradient(to left, #86CB92, #71B48D); 
     padding: 3rem;
     margin-bottom: 0;
     grid-area: footer;
@@ -263,6 +263,10 @@ label {
 
 @media screen and (max-width: 645px) {
 
+    .footer {
+
+        background-image: linear-gradient(to left, #d3cac2, #b4afa7);
+    }
 
     .footer .redesFooter a img {
         width: 3rem;
@@ -297,7 +301,8 @@ label {
     margin: 3rem;
 }
 .versionMovil ul li a {
-    background-color: #86CB92;
+
+    background-image: linear-gradient(to left, #86CB92, #71B48D); 
 }
 
 
