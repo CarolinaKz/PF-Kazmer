@@ -33,17 +33,19 @@ p {
 }
 
 label {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 
-/*TEXTO*/
+
+/* TEXTO - TITULOS */
 
 .titulos {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
 
 
 /* HEADER */
@@ -53,11 +55,12 @@ label {
 }
 
 
-/*IMAGENES*/
+
+/* IMAGENES */
 
 .header img {
     width: 250px;
-} /*LOGO*/
+} /* LOGO */
 
 .imagenesGalerias {
     display: flex;
@@ -95,6 +98,7 @@ label {
 }
 
 
+
 /* CARRUSEL */
 
 #carouselExampleFade {
@@ -106,7 +110,8 @@ label {
 }
 
 
-/*PARALLAX*/
+
+/* PARALLAX */
 
 .parallas .main .texto {
     margin:0 auto
@@ -143,31 +148,6 @@ label {
 }
 
 
-/* CONTENIDO INDEX */
-
-.contenidoIndex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-    grid-area: contenido;
-}
-
-.contenidoIndex img {
-    width: 300px;
-    padding: 2rem;
-}
-
-.fraseIndex{
-	padding: 5%;
-
-}
-
-.fraseIndex p {
-    font-size: 1.6rem;
-}
-
 
 /* VIDEOS */
 
@@ -185,7 +165,9 @@ label {
     padding: 1rem;
 }
 
-/*FORMULARIO*/
+
+
+/* FORMULARIO */
 
 .formulario {
     margin: 6rem;
@@ -213,7 +195,8 @@ label {
 }
 
 
-/*FOOTER*/
+
+/* FOOTER */
 
 .footer {
     display: flex;
@@ -236,6 +219,34 @@ label {
 .footer .declaracion {
     margin-top: 2rem;
 }
+
+
+
+/* CONTENIDO INDEX */
+
+.contenidoIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    grid-area: contenido;
+}
+
+.contenidoIndex img {
+    width: 300px;
+    padding: 2rem;
+}
+
+.fraseIndex{
+	padding: 5%;
+
+}
+
+.fraseIndex p {
+    font-size: 1.6rem;
+}
+
 
 
 /* GRILLA INDEX Y MEDIA QUERIES */
@@ -286,6 +297,8 @@ label {
 
 }
 
+
+
 /* VERSION MOVIL INDEX Y MEDIA QUERIES */
 
 .versionMovil {
@@ -312,6 +325,7 @@ label {
         display: none;
     }
 }
+
 
 
 /* HAMBURGER BUTTON */
