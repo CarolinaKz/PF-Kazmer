@@ -274,9 +274,18 @@ label {
 
 @media screen and (max-width: 645px) {
 
+    .contenidoIndex {
+        padding: 0;
+    }
+
+    ol, ul {
+        padding-left: 0;
+    }
+
     .footer {
 
         background-image: linear-gradient(to left, #d3cac2, #b4afa7);
+        margin-bottom: 0;
     }
 
     .footer .redesFooter a img {
