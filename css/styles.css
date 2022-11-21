@@ -146,7 +146,7 @@ label {
 
 
 
-/* CARRUSEL */
+/* CARRUSEL GALERIA*/
 
 #carouselExampleFade {
     padding: 2.5rem;
@@ -242,6 +242,55 @@ label {
 
 
 
+/* INDEX */
+
+.cajasTextoIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem;
+    grid-area: info;
+}
+
+.cajasTextoIndex img {
+    padding: 2rem;
+    width: 100px;
+}
+
+
+.fraseIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    grid-area: frase;
+}
+
+.fraseIndex img {
+    width: 400px;
+    padding: 2rem;
+}
+
+.fraseIndex p {
+    font-size: 1.6rem;
+}
+
+/* CARRUSEL INDEX */
+
+
+#carouselExampleCaptions {
+    grid-area: carrusel;
+    height: 500px;
+
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+
 /* FOOTER */
 
 .footer {
@@ -268,64 +317,6 @@ label {
 
 
 
-/* INDEX */
-
-.cajasTextoIndex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 5rem;
-    grid-area: contenido;
-}
-
-.cajasTextoIndex img {
-    padding: 2rem;
-    width: 100px;
-}
-
-.fraseIndex{
-	padding: 5%;
-
-}
-
-.fraseIndex p {
-    font-size: 1.6rem;
-}
-
-.camarasIndex {
-    margin-top: 3rem;
-    display: flex;
-    column-gap: 2rem;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-area: camaras;
-
-}
-
-.camarasIndex div {
-    border: solid .2rem;
-}
-
-
-.camarasIndex img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-#carouselExampleCaptions {
-    grid-area: carrusel;
-    height: 500px;
-
-}
-
-.carousel-item {
-    height: 500px;
-}
-
-
-
 /* GRILLA INDEX Y MEDIA QUERIES */
 
 .grillaIndex {
@@ -333,9 +324,9 @@ label {
     grid-template-areas:
     "header"
     "carrusel"
-    "contenido"
+    "info"
     "parallax"
-    "camaras"
+    "frase"
     "footer";
 
     grid-template-columns: 1fr;
