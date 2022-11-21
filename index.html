@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TIPOGRAFIA -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,300;1,600&display=swap" rel="stylesheet">
-    <!-- link animaciones -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- LINK ANIMACIONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- BOOTSTRAP CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -28,7 +29,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img class="ms-5" src="img/GERMAN_LOPEZ-removebg-preview.png" alt="logoGL">
+                <img class="ms-5" src="img/german_lopez__2_-removebg-preview.png" alt="logoGL">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,10 +37,10 @@
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
     
-                <ul class="navbar-nav fs-4 ms-5 gap-5">
+                <ul class="navbar-nav fs-4 ms-5 gap-5  justify-content-end">
     
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="pages/personal.html">PERSONAL</a>
@@ -84,31 +85,123 @@
 
     </section>
 
+    <!-- CARRUSEL INDEX -->
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Am Latina1.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- CAJAS DE TEXTO INDEX -->
+
+    <section class="cajasTextoIndex">
+        <div>
+            <img src="img/camara.png" alt="">
+            <p>Fotografia inovadora</p>
+        </div>
+
+        <div>
+            <img src="img/camarayvideo.png" alt="">
+            <p>Creador de contenido audiovisual</p>
+        </div>
+
+        <div>
+            <img src="img/paraguas.png" alt="">
+            <p>Fotografía y video para fiestas y eventos</p>
+        </div>
+
+    </section>
+
 
     <!-- PARALLAX -->
 
     <section class="main">
 
-	<div class="content">
-		<div class="parallax imgParallax">
-			<div class="textoInterior">
-				<h1 class="fraseParallax">Mirando diferente</h1>
+        <div class="content">
+            <div class="parallax imgParallax">
+                <div class="textoInterior">
+                    <h1 class="fraseParallax">Aunque fijada en el tiempo, una fotografía evoca tanto sentimiento como aquel que viene de la música o la danza. Cualquiera sea el modo – desde la instantánea al momento decisivo del montaje multimedia – la intención y el propósito de la fotografía es representar en términos visuales, sentimientos y experiencias que usualmente eluden la habilidad de las palabras para describirlas. En cualquier caso, los ojos la tienen, y la imaginación siempre se elevará más allá de lo esperado”. Ralph Gibson</h1>
+                </div>
             </div>
-		</div>
+            
+        </div>
         
-    </div>
+        </section>
     
-    </section>
-
 
     <!-- CONTENIDO INDEX EN MAS DE 645PX-->
 
-    <section class="contenidoIndex">
+    <section>
 
-        <img src="img/julius-drost-dS-q7-zkD9c-unsplash.jpg" alt="" class="mt-5 wow animate__animated animate__fadeInDown">
+        <!-- <img src="img/julius-drost-dS-q7-zkD9c-unsplash.jpg" alt="" class="mt-5 wow animate__animated animate__fadeInDown">
 
         <div class="fraseIndex wow animate__animated animate__fadeInDown">
             <p>“Aunque fijada en el tiempo, una fotografía evoca tanto sentimiento como aquel que viene de la música o la danza. Cualquiera sea el modo – desde la instantánea al momento decisivo del montaje multimedia – la intención y el propósito de la fotografía es representar en términos visuales, sentimientos y experiencias que usualmente eluden la habilidad de las palabras para describirlas. En cualquier caso, los ojos la tienen, y la imaginación siempre se elevará más allá de lo esperado”. Ralph Gibson</p>      
+        </div> -->
+
+        <div class="camarasIndex">
+            <img src="img/camara1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga cumque vero nulla consectetur hic minima. Minima totam quasi quis aliquam mollitia a, maxime, corporis minus velit doloremque perferendis blanditiis.</p>
+        </div>
+
+        <div class="camarasIndex">
+            <img src="img/camara2.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga beatae ipsum, harum amet quasi hic quo ipsa magnam commodi cupiditate tenetur ipsam repudiandae possimus laborum eius pariatur fugit reiciendis aperiam!</p>
+        </div>
+
+        <div class="camarasIndex">
+            <img src="img/camara3.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe sunt quisquam dolor non, voluptates, nobis totam enim reprehenderit recusandae, officiis maxime voluptas voluptate nam. Odio laborum illo necessitatibus atque.</p>
+        </div>
+
+        <div class="camarasIndex">
+            <img src="img/camara4.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi possimus expedita, laboriosam necessitatibus quod quo tempore corrupti accusantium? Commodi, iure. Architecto laudantium, voluptatibus magnam cumque asperiores temporibus! Dolorem, nulla.</p>
+        </div>
+
+        <div class="camarasIndex">
+            <img src="img/camara5.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nesciunt aut atque voluptate itaque animi deserunt quidem ipsum non, iusto harum id, voluptatem est, sapiente at quod. Veritatis, soluta maxime.</p>
+        </div>
+
+        <div class="camarasIndex">
+            <img src="img/camara6.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto error odit molestiae fugit illo. Consectetur ut id voluptas modi eius voluptate nemo voluptatum laborum quae expedita minus, iste quas cumque?</p>
         </div>
     
     </section>
