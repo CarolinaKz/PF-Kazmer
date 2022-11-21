@@ -295,18 +295,22 @@ label {
 
 .camarasIndex {
     margin-top: 3rem;
-    grid-area: camaras;
     display: flex;
-    flex-direction: column;
+    column-gap: 2rem;
     align-items: center;
     justify-content: space-evenly;
-    width: 300px;
+    grid-area: camaras;
 
 }
 
+.camarasIndex div {
+    border: solid .2rem;
+}
+
+
 .camarasIndex img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
 
