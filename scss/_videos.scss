@@ -1,0 +1,18 @@
+/* VIDEOS */
+
+.videos {
+    background-image: url('https://i.ibb.co/rcZKxvV/Fondovideos.jpg');
+}
+
+.contenedorVideos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+
+    iframe {
+        padding: 2rem;
+    }
+}
