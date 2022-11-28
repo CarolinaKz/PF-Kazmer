@@ -146,13 +146,6 @@ label {
     transition: all .5s;
 }
 
-@media screen and (max-width: 765px) {
-
-    #carouselExampleFade{
-        display: none;
-    }
-    
-}
 
 @media screen and (max-width: 768px){
 
@@ -406,36 +399,6 @@ label {
 
     grid-template-columns: 1fr;
     grid-template-rows: 100px auto 400px 500px auto 150px;
-}
-
-@media screen and (max-width: 768px) {
-
-.contenidoIndex img {
-    display: none;
-}
-
-}
-
-@media screen and (max-width: 645px) {
-
-    .contenidoIndex {
-        padding: 0;
-    }
-
-    ol, ul {
-        padding-left: 0;
-    }
-
-
-    .footer .redesFooter a img {
-        width: 3rem;
-    }
-
-
-    h1 {
-        font-size: 1.6rem;
-    }
-
 }
 
 
