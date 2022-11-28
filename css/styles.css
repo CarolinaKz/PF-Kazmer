@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     background-color: #000300;
 }
 
@@ -45,7 +45,7 @@ label {
 
 .titulos {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 15rem;
     margin-bottom: 2rem;
 }
 
@@ -55,28 +55,24 @@ label {
 
 .header {
     grid-area: header;
-    background-color: #05040B;
 }
 
 .navbar {
-    opacity: 85%;
-    background-color: #000;
-}
-
-@media screen and (min-width: 993px) {
-    .navbar-collapse {
-        flex-grow: 0;
-    }
-    
-}
-
-.nav-item {
-    padding: 3rem;
+    opacity: 95%;
 }
 
 .nav-item a {
-    color: #fff;
-    position: relative;
+    color: rgb(185, 185, 185);
+    font-size: 1.3rem;
+    margin-left: 4rem;
+
+}
+
+@media screen and (max-width: 992px) {
+    .nav-item a {
+        margin-left: 0;
+    }
+
 }
 
 .nav-item a:hover {
@@ -84,7 +80,7 @@ label {
     }
 
 
-.nav-item a::before,
+/* .nav-item a::before,
 .nav-item a::after {
 
     content: '';
@@ -117,27 +113,32 @@ label {
 .nav-item a:hover::after {
     opacity: 1;
     width: 40%; 
-}
+} */
+
 
 
 /* IMAGENES */
 
 .header img {
-    width: 230px;
+    width: 200px;
 } /* LOGO */
 
 .imagenesGalerias {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
+    margin-top: 15rem;
 }
 
 .imagenesGalerias img {
     width: 40rem;
-    margin: 2rem;
-    order: 4;
+    height: 30rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     object-fit: cover;
     filter: opacity(.7)
+
 }
 
 .imagenesGalerias img:hover {
@@ -162,23 +163,6 @@ label {
 }
 
 
-
-/* CARRUSEL GALERIA*/
-
-#carouselExampleFade {
-    /* padding: 2.5rem; */
-    margin-left: 14%;
-    margin-top: 4rem;
-    width: 70%
-    
-}
-
-.carousel-item img {
-    object-fit: cover;
-}
-
-
-
 /* PARALLAX */
 
 .parallas .main .texto {
@@ -197,15 +181,42 @@ label {
     
 }
 
-.textoInterior{
+.interior{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	color:#fff;
-	font-weight: bold;
 	left: 10%;
 	position: absolute;
 	text-align: center;
-	top:40%;
-	width: 80%
+	top:15%;
 }
+
+.interior p {
+    font-size: 1.5rem;
+}
+
+.interior a {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background-color:#1B171F;
+    color: #fff;
+}
+
+.interior a img {
+    width: 3rem;
+}
+
+
+.interior a:hover {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background-color:#fff;
+    color:#000300;
+    transition: .5s;
+}
+
 
 .imgParallax {
     background-image: url('https://images.unsplash.com/photo-1640539983451-d8024afb9675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')
@@ -229,6 +240,7 @@ label {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 10rem;
 }
 
 .contenedorVideos iframe {
@@ -242,6 +254,7 @@ label {
     margin: 6rem;
     padding: 3rem;
 }
+
 
 .textForm {
     font-family: 'Montserrat', sans-serif;
@@ -286,6 +299,7 @@ label {
     text-align: center;
 }
 
+
 .cajaIndex img {
     padding: 2rem;
     
@@ -323,6 +337,7 @@ label {
 
 .fraseIndex p {
     font-size: 1.6rem;
+    font-style: italic;
 }
 
 /* CARRUSEL INDEX */
@@ -331,13 +346,22 @@ label {
 #carouselExampleCaptions {
     grid-area: carrusel;
     height: 500px;
-    
 
 }
 
 .carousel-item {
     height: 500px;
+
 }
+
+@media screen and (max-width: 768px){
+
+.d-none {
+    display: block !important;
+}
+    
+}
+
 
 
 
@@ -381,7 +405,7 @@ label {
     "footer";
 
     grid-template-columns: 1fr;
-    grid-template-rows: 113px auto 400px 500px auto 150px;
+    grid-template-rows: 100px auto 400px 500px auto 150px;
 }
 
 @media screen and (max-width: 768px) {
@@ -402,58 +426,18 @@ label {
         padding-left: 0;
     }
 
-    .footer {
-
-        background-image: linear-gradient(to left, #d3cac2, #b4afa7);
-        margin-bottom: 0;
-    }
 
     .footer .redesFooter a img {
         width: 3rem;
     }
 
-    .parallax {
-        display: none;
-    }
-
-    .fraseIndex {
-        display: none;
-    }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
 }
 
-
-
-/* VERSION MOVIL INDEX Y MEDIA QUERIES */
-
-.versionMovil {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.versionMovil a {
-    padding: 5rem;
-    margin: 3rem;
-}
-.versionMovil ul li a {
-
-    background-image: linear-gradient(to left, #86CB92, #71B48D); 
-}
-
-
-@media screen and (min-width: 646px) {
-
-    .versionMovil {
-        display: none;
-    }
-}
 
 
 
@@ -462,3 +446,4 @@ label {
 .navbar-toggler {
     padding: 1rem;
 }
+
