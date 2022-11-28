@@ -1,0 +1,306 @@
+@import "variables";
+@import "home";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bg-body;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fcfcfc;
+}
+
+p {
+    font-size: $fs-parrafos;
+    color: #b4afa7;
+}
+
+label {
+    font-size: 1.5rem;
+    color: #d3cac2;
+}
+
+
+/* TEXTO - TITULOS */
+
+.titulos {
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* HEADER */
+
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    opacity: 95%;
+}
+
+.nav-item a {
+    color: rgb(185, 185, 185);
+    font-size: 1.3rem;
+    margin-left: 4rem;
+
+}
+
+@media screen and (max-width: 992px) {
+    .nav-item a {
+        margin-left: 0;
+    }
+
+}
+
+.nav-item a:hover {
+    color: $color-blanco;
+    }
+
+
+/* .nav-item a::before,
+.nav-item a::after {
+
+    content: '';
+    position: absolute;
+    border-bottom: .1rem solid beige;
+    opacity: 0;
+    transition: .5s;
+}
+
+.nav-item a::before {
+
+    bottom: -.2rem;
+    right: 0;
+    width: 80%;
+
+}
+
+.nav-item a::after {
+    bottom: -.6rem;
+    left: 0;
+    width: 60%; 
+}
+
+.nav-item a:hover::before {
+    opacity: 1;
+    width: 60%;
+
+}
+
+.nav-item a:hover::after {
+    opacity: 1;
+    width: 40%; 
+} */
+
+
+
+/* IMAGENES */
+
+.header img {
+    width: 200px;
+} /* LOGO */
+
+.imagenesGalerias {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    margin-top: 15rem;
+}
+
+.imagenesGalerias img {
+    width: 40rem;
+    height: 30rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    filter: opacity(.7)
+
+}
+
+.imagenesGalerias img:hover {
+    filter: opacity(1);
+    transition: all .5s;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .imagenesGalerias img {
+        filter: none;
+    }
+    
+}
+
+
+/* PARALLAX */
+
+.parallas .main .texto {
+    margin:0 auto
+}
+
+.parallax{
+    grid-area: parallax;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: 50rem;
+	max-width: 100%;
+	position: relative
+    
+}
+
+.interior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	color: $color-blanco;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top:15%;
+
+    p {
+        font-size: $fs-parrafos;
+    }
+
+    a {
+        padding: 2rem;
+        margin-bottom: 1rem;
+        background-color:#1B171F;
+        color: $color-blanco;
+    }
+
+    a img {
+        width: 3rem;
+    }
+
+    a:hover {
+        padding: 2rem;
+        margin-bottom: 1rem;
+        background-color: $color-blanco;
+        color:#000300;
+        transition: .5s;
+    }
+
+}
+
+
+.imgParallax {
+    background-image: url('https://images.unsplash.com/photo-1640539983451-d8024afb9675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')
+}
+
+.fraseParallax {
+    font-size: 2rem;
+}
+
+
+/* VIDEOS */
+
+.videos {
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/c7c7d5102154689.5f3045283afc7.gif');
+}
+
+.contenedorVideos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+
+    iframe {
+        padding: 2rem;
+    }
+}
+
+
+
+/* FORMULARIO */
+
+.formulario {
+    margin: 6rem;
+    padding: 3rem;
+}
+
+
+.textForm {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botonEnviar {
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: #fcfcfc;
+    font-family: 'Montserrat', sans-serif;
+
+    :hover {
+        color:#fcfcfc;
+        background-color:#292826;
+        transition: all .2s;
+    }
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B171F; 
+    padding: 3rem;
+    margin-bottom: 0;
+    grid-area: footer;
+
+    .redesFooter a img {
+        width: 4rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    
+    }
+
+    .declaracion {
+        margin-top: 2rem;
+    }
+}
+
+
+/* HAMBURGER BUTTON */
+
+.navbar-toggler {
+    padding: 1rem;
+}
+
