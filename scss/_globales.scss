@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bg-body;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fcfcfc;
+}
+
+p {
+    font-size: $fs-parrafos;
+    color: #b4afa7;
+}
+
+label {
+    font-size: 1.5rem;
+    color: #d3cac2;
+}
+
+
+
+/* LOGO */
+
+.header img {
+    width: 200px;
+} 
+
+
+/* TEXTO - TITULOS */
+
+.titulos {
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}

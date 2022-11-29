@@ -64,13 +64,6 @@
 
 
 
-/* IMAGENES */
-
-.header img {
-    width: 200px;
-} /* LOGO */
-
-
 /* INDEX */
 
 .cajasTextoIndex {
@@ -81,6 +74,8 @@
 .contenedorCajasIndex {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
 
 .cajaIndex {
@@ -99,6 +94,19 @@
         transform: scale(1.1);
         transition : .2s;     
     }
+}
+
+@media screen and (max-width: 899px) {
+    .contenedorCajasIndex {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    img {
+        width: 60%;
+    }
+
 }
 
 
@@ -129,6 +137,12 @@
     }
 }
 
+@media screen and (max-width: 849px) {
+    .fraseIndex {
+        flex-direction: column;
+    }
+}
+
 
 /* CARRUSEL INDEX */
 
@@ -144,13 +158,6 @@
 
 }
 
-@media screen and (max-width: 768px){
-
-.d-none {
-    display: block !important;
-}
-    
-}
 
 
 /* GRILLA INDEX Y MEDIA QUERIES */
@@ -166,8 +173,57 @@
     "footer";
 
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto 400px 500px auto 150px;
+    grid-template-rows: 100px auto auto 500px auto 150px;
 }
+
+@media screen and (max-width: 899px) {
+    
+    .grillaIndex {
+        grid-template-areas:
+        "header"
+        "carrusel"
+        "info"
+        "frase"
+        "footer";
+
+        grid-template-rows: 100px auto auto auto 200px;
+    }
+    .main {
+        display: none;
+    }
+
+    .fraseIndex {
+        background-color: #0b090c; 
+        ;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    .grillaIndex {
+        grid-template-areas:
+        "header"
+        "info"
+        "frase"
+        "footer";
+
+        grid-template-rows: 100px auto auto 200px;
+    }
+
+    #carouselExampleCaptions {
+        display: none;
+    }
+
+    .contenedorCajasIndex {
+        margin-bottom: 6rem;
+    }
+
+    .declaracion {
+        font-size: 1.3rem;
+    }
+        
+    }
 
 
 
