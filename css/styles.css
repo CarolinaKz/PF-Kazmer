@@ -75,41 +75,17 @@ label {
   color: #fff;
 }
 
-/* .nav-item a::before,
-.nav-item a::after {
-
-    content: '';
-    position: absolute;
-    border-bottom: .1rem solid beige;
-    opacity: 0;
-    transition: .5s;
+/* CARRUSEL INDEX */
+#carouselExampleCaptions {
+  grid-area: carrusel;
+  height: 500px;
 }
 
-.nav-item a::before {
-
-    bottom: -.2rem;
-    right: 0;
-    width: 80%;
-
+.carousel-item {
+  height: 500px;
 }
 
-.nav-item a::after {
-    bottom: -.6rem;
-    left: 0;
-    width: 60%; 
-}
-
-.nav-item a:hover::before {
-    opacity: 1;
-    width: 60%;
-
-}
-
-.nav-item a:hover::after {
-    opacity: 1;
-    width: 40%; 
-} */
-/* INDEX */
+/* CAJAS INDEX */
 .cajasTextoIndex {
   margin-top: 8rem;
   grid-area: info;
@@ -176,51 +152,6 @@ label {
     flex-direction: column;
   }
 }
-/* CARRUSEL INDEX */
-#carouselExampleCaptions {
-  grid-area: carrusel;
-  height: 500px;
-}
-
-.carousel-item {
-  height: 500px;
-}
-
-/* GRILLA INDEX Y MEDIA QUERIES */
-.grillaIndex {
-  display: grid;
-  grid-template-areas: "header" "carrusel" "info" "parallax" "frase" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px auto auto 500px auto 150px;
-}
-
-@media screen and (max-width: 899px) {
-  .grillaIndex {
-    grid-template-areas: "header" "carrusel" "info" "frase" "footer";
-    grid-template-rows: 100px auto auto auto 200px;
-  }
-  .main {
-    display: none;
-  }
-  .fraseIndex {
-    background-color: #0b090c;
-  }
-}
-@media screen and (max-width: 768px) {
-  .grillaIndex {
-    grid-template-areas: "header" "info" "frase" "footer";
-    grid-template-rows: 100px auto auto 200px;
-  }
-  #carouselExampleCaptions {
-    display: none;
-  }
-  .contenedorCajasIndex {
-    margin-bottom: 6rem;
-  }
-  .declaracion {
-    font-size: 1.3rem;
-  }
-}
 /* PARALLAX */
 .parallas .main .texto {
   margin: 0 auto;
@@ -276,6 +207,41 @@ label {
   font-size: 2rem;
 }
 
+/* GRILLA INDEX Y MEDIA QUERIES */
+.grillaIndex {
+  display: grid;
+  grid-template-areas: "header" "carrusel" "info" "parallax" "frase" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto auto 500px auto 150px;
+}
+
+@media screen and (max-width: 899px) {
+  .grillaIndex {
+    grid-template-areas: "header" "carrusel" "info" "frase" "footer";
+    grid-template-rows: 100px auto auto auto 200px;
+  }
+  .main {
+    display: none;
+  }
+  .fraseIndex {
+    background-color: #0b090c;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grillaIndex {
+    grid-template-areas: "header" "info" "frase" "footer";
+    grid-template-rows: 100px auto auto 200px;
+  }
+  #carouselExampleCaptions {
+    display: none;
+  }
+  .contenedorCajasIndex {
+    margin-bottom: 6rem;
+  }
+  .declaracion {
+    font-size: 1.3rem;
+  }
+}
 /* FOOTER */
 .footer {
   display: flex;
@@ -324,9 +290,15 @@ label {
   transition: all 0.5s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 899px) {
   .imagenesGalerias img {
     filter: none;
+  }
+  .modal-content {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
   }
 }
 /* VIDEOS */
