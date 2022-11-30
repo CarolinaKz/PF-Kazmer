@@ -25,10 +25,12 @@ a {
 }
 
 h1 {
+  font-size: 2.5rem;
   color: #fcfcfc;
 }
 
 p {
+  font-size: 1.5rem;
   color: #b4afa7;
 }
 
@@ -109,9 +111,6 @@ label {
 .cajaIndex img:hover {
   transform: scale(1.1);
   transition: 0.2s;
-}
-.cajaIndex p {
-  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 899px) {
@@ -225,19 +224,10 @@ label {
     background-color: #0b090c;
   }
 }
-.tituloPantallaChica {
-  margin-top: 3rem;
-  grid-area: titulo;
-}
-.tituloPantallaChica h1 {
-  font-size: 2rem;
-  text-align: center;
-}
-
 @media screen and (max-width: 768px) {
   .grillaIndex {
-    grid-template-areas: "header" "titulo" "info" "frase" "footer";
-    grid-template-rows: 100px auto auto auto 200px;
+    grid-template-areas: "header" "info" "frase" "footer";
+    grid-template-rows: 100px auto auto 200px;
   }
   #carouselExampleCaptions {
     display: none;
@@ -245,10 +235,8 @@ label {
   .contenedorCajasIndex {
     margin-bottom: 6rem;
   }
-}
-@media screen and (min-width: 769px) {
-  .tituloPantallaChica {
-    display: none;
+  .declaracion {
+    font-size: 1.3rem;
   }
 }
 /* FOOTER */
@@ -269,14 +257,8 @@ label {
 }
 .footer .declaracion {
   margin-top: 2rem;
-  font-size: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
-  .declaracion {
-    font-size: 1.2rem !important;
-  }
-}
 /* HAMBURGER BUTTON */
 .navbar-toggler {
   padding: 1rem;

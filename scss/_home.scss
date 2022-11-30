@@ -73,6 +73,10 @@
         transform: scale(1.1);
         transition : .2s;     
     }
+
+    p {
+        font-size: $fuente-mediana;
+    }
 }
 
 @media screen and (max-width: 899px) {
@@ -82,12 +86,7 @@
         margin-bottom: 4rem;
     }
 
-    img {
-        width: 60%;
-    }
-
 }
-
 
 .fraseIndex {
     display: flex;
@@ -152,7 +151,7 @@
 	top:15%;
 
     p {
-        font-size: $fs-parrafos;
+        font-size: $fuente-mediana;
     }
 
     a {
@@ -224,17 +223,28 @@
     }
 }
 
+    .tituloPantallaChica {
+        margin-top: 3rem;
+        grid-area: titulo;
+
+    h1 {
+        font-size: $fuente-grande;
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width: 768px){
 
     .grillaIndex {
         grid-template-areas:
         "header"
+        "titulo"
         "info"
         "frase"
         "footer";
 
-        grid-template-rows: 100px auto auto 200px;
+        grid-template-rows: 100px auto auto auto 200px;
     }
 
     #carouselExampleCaptions {
@@ -243,13 +253,17 @@
 
     .contenedorCajasIndex {
         margin-bottom: 6rem;
-    }
 
-    .declaracion {
-        font-size: 1.3rem;
+    
     }
         
+}
+
+@media screen and (min-width: 769px) {
+    .tituloPantallaChica {
+        display: none;
     }
+}
 
 
 
@@ -274,6 +288,13 @@
 
     .declaracion {
         margin-top: 2rem;
+        font-size: $fuente-mediana;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .declaracion {
+        font-size: $fuente-chica !important;
     }
 }
 
