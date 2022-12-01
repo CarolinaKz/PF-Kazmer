@@ -18,6 +18,7 @@
     color: #000;
     background-color: #fcfcfc;
     font-family: 'Montserrat', sans-serif;
+    @extend .estilosBotones;
 
     :hover {
         color:#fcfcfc;

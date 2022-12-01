@@ -37,16 +37,8 @@ label {
   color: #d3cac2;
 }
 
-/* LOGO */
-.header img {
-  width: 200px;
-}
-
-/* TEXTO - TITULOS */
-.titulos {
-  text-align: center;
-  margin-top: 15rem;
-  margin-bottom: 2rem;
+.estilosBotones, .botonEnviar, .carousel-item a {
+  border-radius: 5rem;
 }
 
 /* HEADER */
@@ -79,10 +71,10 @@ label {
   height: 500px;
 }
 
-.carousel-item {
+.carousel-item img {
+  object-fit: cover;
   height: 500px;
 }
-
 /* CAJAS INDEX */
 .cajasTextoIndex {
   margin-top: 8rem;
@@ -280,6 +272,18 @@ label {
 /* HAMBURGER BUTTON */
 .navbar-toggler {
   padding: 1rem;
+}
+
+/* LOGO */
+.header img {
+  width: 200px;
+}
+
+/* TEXTO - TITULOS */
+.titulos {
+  text-align: center;
+  margin-top: 15rem;
+  margin-bottom: 2rem;
 }
 
 /* ESTILOS GALERIAS*/

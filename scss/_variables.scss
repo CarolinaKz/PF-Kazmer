@@ -3,3 +3,11 @@ $fuente-chica: 1.2rem;
 $fuente-mediana: 1.5rem;
 $fuente-grande: 2rem;
 $color-blanco: #fff;
+
+//MIXIN
+@mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
