@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #000300;
+  background-color: rgb(255, 255, 255);
 }
 
 ul {
@@ -46,10 +46,25 @@ label {
   grid-area: header;
 }
 
-.navbar {
-  opacity: 95%;
+/* LOGO */
+.header img {
+  width: 200px;
+  margin-left: 4rem;
 }
 
+.navbar {
+  opacity: 95%;
+  background-color: #000;
+}
+
+/* HAMBURGER BUTTON */
+.navbar-toggler {
+  padding: 1rem;
+}
+
+.nav-item {
+  margin-left: 4rem;
+}
 .nav-item a {
   color: rgb(185, 185, 185);
   font-size: 1.3rem;
@@ -75,7 +90,7 @@ label {
   object-fit: cover;
   height: 500px;
 }
-/* CAJAS INDEX */
+/* CARRUSEL INDEX */
 .cajasTextoIndex {
   margin-top: 8rem;
   grid-area: info;
@@ -190,19 +205,38 @@ label {
 }
 
 .imgParallax {
-  background-image: url("https://images.unsplash.com/photo-1640539983451-d8024afb9675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  background-image: url("https://images.pexels.com/photos/217380/pexels-photo-217380.jpeg");
 }
 
 .fraseParallax {
   font-size: 2rem;
 }
 
+/* FOTO INDEX */
+.fotoIndex {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  grid-area: foto;
+}
+.fotoIndex img {
+  width: 100%;
+}
+.fotoIndex .tituloFotoIndex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: antiquewhite;
+}
+
 /* GRILLA INDEX Y MEDIA QUERIES */
 .grillaIndex {
   display: grid;
-  grid-template-areas: "header" "carrusel" "info" "parallax" "frase" "footer";
+  grid-template-areas: "header" "foto" "carrusel" "info" "parallax" "frase" "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 100px auto auto 500px auto 150px;
+  grid-template-rows: auto 800px auto auto 500px auto 150px;
 }
 
 @media screen and (max-width: 899px) {
@@ -269,16 +303,6 @@ label {
     font-size: 1.2rem !important;
   }
 }
-/* HAMBURGER BUTTON */
-.navbar-toggler {
-  padding: 1rem;
-}
-
-/* LOGO */
-.header img {
-  width: 200px;
-}
-
 /* TEXTO - TITULOS */
 .titulos {
   text-align: center;

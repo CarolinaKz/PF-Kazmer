@@ -1,4 +1,4 @@
-$bg-body: #000300;
+$bg-body: rgb(255, 255, 255);
 $fuente-chica: 1.2rem;
 $fuente-mediana: 1.5rem;
 $fuente-grande: 2rem;
@@ -8,6 +8,12 @@ $color-blanco: #fff;
 @mixin flexColumnCenter {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexRowCenter {
+    display: flex;
     justify-content: center;
     align-items: center;
 }

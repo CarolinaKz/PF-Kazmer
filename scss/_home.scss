@@ -4,14 +4,34 @@
     grid-area: header;
 }
 
+/* LOGO */
+
+.header img {
+    width: 200px;
+    margin-left: 4rem;
+} 
+
 .navbar {
     opacity: 95%;
+    background-color: #000;
 }
 
-.nav-item a {
-    color: rgb(185, 185, 185);
-    font-size: 1.3rem;
+/* HAMBURGER BUTTON */
+
+.navbar-toggler {
+    padding: 1rem;
+}
+
+
+.nav-item {
     margin-left: 4rem;
+
+    a {
+        color: rgb(185, 185, 185);
+        font-size: 1.3rem;
+        margin-left: 4rem;
+
+    }
 
 }
 
@@ -49,8 +69,8 @@
     }
 }
 
+/* CARRUSEL INDEX */
 
-/* CAJAS INDEX */
 
 .cajasTextoIndex {
     margin-top: 8rem;
@@ -180,13 +200,35 @@
 }
 
 .imgParallax {
-    background-image: url('https://images.unsplash.com/photo-1640539983451-d8024afb9675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80')
+    background-image: url('https://images.pexels.com/photos/217380/pexels-photo-217380.jpeg')
 }
 
 .fraseParallax {
     font-size: 2rem;
 }
 
+/* FOTO INDEX */
+
+.fotoIndex {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    grid-area: foto;
+    
+    img {
+        width: 100%;
+    }
+
+    .tituloFotoIndex {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: antiquewhite;
+        
+    }
+}
 
 
 /* GRILLA INDEX Y MEDIA QUERIES */
@@ -195,6 +237,7 @@
     display: grid;
     grid-template-areas:
     "header"
+    "foto"
     "carrusel"
     "info"
     "parallax"
@@ -202,7 +245,7 @@
     "footer";
 
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto auto 500px auto 150px;
+    grid-template-rows: auto 800px auto auto 500px auto 150px;
 }
 
 @media screen and (max-width: 899px) {
@@ -299,18 +342,6 @@
     }
 }
 
-
-/* HAMBURGER BUTTON */
-
-.navbar-toggler {
-    padding: 1rem;
-}
-
-/* LOGO */
-
-.header img {
-    width: 200px;
-} 
 
 
 /* TEXTO - TITULOS */
