@@ -1,4 +1,4 @@
-/* HEADER */
+/* HEADER Y NAVBAR*/
 
 .header {
     grid-area: header;
@@ -12,8 +12,12 @@
 } 
 
 .navbar {
-    opacity: 95%;
-    background-color: #000;
+    transition: all 0.5s;
+}
+
+.navbar-scroll {
+    background-color: #101009;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.13);
 }
 
 /* HAMBURGER BUTTON */
@@ -24,15 +28,12 @@
 
 
 .nav-item {
-    margin-left: 4rem;
-
+    
     a {
         color: rgb(185, 185, 185);
         font-size: 1.3rem;
         margin-left: 4rem;
-
     }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -53,7 +54,7 @@
 
 #carouselExampleCaptions {
     grid-area: carrusel;
-    height: 500px;
+    width: 800px;
 
 }
 
@@ -61,7 +62,7 @@
 
     img {
         object-fit: cover;
-        height: 500px;
+        width: 800px;
     }
 
     a { 
@@ -71,9 +72,15 @@
 
 /* CARRUSEL INDEX */
 
+.carruselIndex {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4rem;
+}
+
 
 .cajasTextoIndex {
-    margin-top: 8rem;
+    margin-top: 6rem;
     grid-area: info;
 }
 
@@ -159,75 +166,39 @@
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
-	height: 50rem;
-	max-width: 100%;
+	background-size:cover;
+	height: 800px;
+	width: 100%;
 	position: relative
     
 }
 
 .interior {
-    @include flexColumnCenter;
+    display: flex;
+    flex-direction: column;
 	color: $color-blanco;
-	left: 10%;
 	position: absolute;
-	text-align: center;
-	top:15%;
+	text-align:justify;
+    padding: 2rem;
+	top:50%;
+
+    h1 {
+        font-size: $fuente-xxl;
+        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.651);
+    }
 
     p {
         font-size: $fuente-mediana;
-    }
-
-    a {
-        padding: 2rem;
-        margin-bottom: 1rem;
-        background-color:#1B171F;
         color: $color-blanco;
-    }
-
-    a img {
-        width: 3rem;
-    }
-
-    a:hover {
-        padding: 2rem;
-        margin-bottom: 1rem;
-        background-color: $color-blanco;
-        color:#000300;
-        transition: .5s;
+        font-style: italic;
     }
 
 }
+
+//IMAGEN PARALLAX
 
 .imgParallax {
-    background-image: url('https://images.pexels.com/photos/217380/pexels-photo-217380.jpeg')
-}
-
-.fraseParallax {
-    font-size: 2rem;
-}
-
-/* FOTO INDEX */
-
-.fotoIndex {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-    grid-area: foto;
-    
-    img {
-        width: 100%;
-    }
-
-    .tituloFotoIndex {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5rem;
-        color: antiquewhite;
-        
-    }
+    background-image: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg')
 }
 
 
@@ -237,15 +208,14 @@
     display: grid;
     grid-template-areas:
     "header"
-    "foto"
-    "carrusel"
-    "info"
     "parallax"
+    "info"
+    "carrusel"
     "frase"
     "footer";
 
     grid-template-columns: 1fr;
-    grid-template-rows: auto 800px auto auto 500px auto 150px;
+    grid-template-rows: auto 800px auto auto auto 150px;
 }
 
 @media screen and (max-width: 899px) {

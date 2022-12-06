@@ -41,7 +41,7 @@ label {
   border-radius: 5rem;
 }
 
-/* HEADER */
+/* HEADER Y NAVBAR*/
 .header {
   grid-area: header;
 }
@@ -53,8 +53,12 @@ label {
 }
 
 .navbar {
-  opacity: 95%;
-  background-color: #000;
+  transition: all 0.5s;
+}
+
+.navbar-scroll {
+  background-color: #101009;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.13);
 }
 
 /* HAMBURGER BUTTON */
@@ -62,9 +66,6 @@ label {
   padding: 1rem;
 }
 
-.nav-item {
-  margin-left: 4rem;
-}
 .nav-item a {
   color: rgb(185, 185, 185);
   font-size: 1.3rem;
@@ -83,16 +84,22 @@ label {
 /* CARRUSEL INDEX */
 #carouselExampleCaptions {
   grid-area: carrusel;
-  height: 500px;
+  width: 800px;
 }
 
 .carousel-item img {
   object-fit: cover;
-  height: 500px;
+  width: 800px;
 }
 /* CARRUSEL INDEX */
+.carruselIndex {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4rem;
+}
+
 .cajasTextoIndex {
-  margin-top: 8rem;
+  margin-top: 6rem;
   grid-area: info;
 }
 
@@ -167,76 +174,41 @@ label {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
-  height: 50rem;
-  max-width: 100%;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
   position: relative;
 }
 
 .interior {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: #fff;
-  left: 10%;
   position: absolute;
-  text-align: center;
-  top: 15%;
+  text-align: justify;
+  padding: 2rem;
+  top: 50%;
+}
+.interior h1 {
+  font-size: 7rem;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.651);
 }
 .interior p {
   font-size: 1.5rem;
-}
-.interior a {
-  padding: 2rem;
-  margin-bottom: 1rem;
-  background-color: #1B171F;
   color: #fff;
-}
-.interior a img {
-  width: 3rem;
-}
-.interior a:hover {
-  padding: 2rem;
-  margin-bottom: 1rem;
-  background-color: #fff;
-  color: #000300;
-  transition: 0.5s;
+  font-style: italic;
 }
 
 .imgParallax {
-  background-image: url("https://images.pexels.com/photos/217380/pexels-photo-217380.jpeg");
-}
-
-.fraseParallax {
-  font-size: 2rem;
-}
-
-/* FOTO INDEX */
-.fotoIndex {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  grid-area: foto;
-}
-.fotoIndex img {
-  width: 100%;
-}
-.fotoIndex .tituloFotoIndex {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 5rem;
-  color: antiquewhite;
+  background-image: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg");
 }
 
 /* GRILLA INDEX Y MEDIA QUERIES */
 .grillaIndex {
   display: grid;
-  grid-template-areas: "header" "foto" "carrusel" "info" "parallax" "frase" "footer";
+  grid-template-areas: "header" "parallax" "info" "carrusel" "frase" "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: auto 800px auto auto 500px auto 150px;
+  grid-template-rows: auto 800px auto auto auto 150px;
 }
 
 @media screen and (max-width: 899px) {
