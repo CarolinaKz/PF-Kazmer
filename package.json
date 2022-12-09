@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CarolinaKz/PreEntrega2-Kazmer.git"
+    "url": "git+https://github.com/CarolinaKz/PF-Kazmer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CarolinaKz/PreEntrega2-Kazmer/issues"
+    "url": "https://github.com/CarolinaKz/PF-Kazmer/issues"
   },
-  "homepage": "https://github.com/CarolinaKz/PreEntrega2-Kazmer#readme"
+  "homepage": "https://github.com/CarolinaKz/PF-Kazmer#readme"
 }

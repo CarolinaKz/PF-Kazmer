@@ -1,5 +1,10 @@
 /* FORMULARIO */
 
+.formularioContacto {
+    
+    background-size: cover;
+}
+
 .formulario {
     margin: 6rem;
     padding: 3rem;
@@ -24,5 +29,17 @@
         color:#fcfcfc;
         background-color:#292826;
         transition: all .2s;
+    }
+}
+
+/* TEXTO - TITULOS */
+
+.titulos {
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+
+    h1 {
+        color: #292826;
     }
 }
