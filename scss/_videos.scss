@@ -1,7 +1,8 @@
 /* VIDEOS */
 
 .videos {
-    background-image: url('https://i.ibb.co/5Km56Sr/fondovideos.jpg');
+    background-image: url('https://i.ibb.co/zV9CcQ2/fondo-videos.png');
+    background-size: cover;
 }
 
 .contenedorVideos {
@@ -10,9 +11,31 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 10rem;
+    margin-top: 9rem;
 
     iframe {
         padding: 2rem;
+    }
+}
+
+.enlaceVideos {
+    @include flexRowCenter;
+    padding: 5rem;
+
+    a {
+        font-size: $fuente-grande;
+        padding: 1rem;
+        margin-right: 2rem;
+        @extend .estilosBotones;
+        @extend .coloresBotones;
+    }
+
+    a:hover {
+        background-color: #0AC7CE;
+        box-shadow: 0 3px 10px hsla(0, 0%, 100%, 0.904);
+    }
+
+    h1 {
+        color: $color-blanco;
     }
 }

@@ -21,27 +21,100 @@
 }
 
 .nav-item {
-    
-    
     a {
-        color: rgba(5, 5, 5, 0.527);
-        font-size: 1.3rem;
-        font-weight: bold;
+        color: rgba(5, 5, 5, 0.747);
+        font-size: $fuente-grande - .5rem;
         margin-right: 4rem;
     }
 }
 
-@media screen and (max-width: 992px) {
-    .nav-item a {
-        margin-left: 0;
+.nav-item a:hover {
+    color: $color-negro;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.651);
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+    .nav-item {
+        a {
+            font-size: $fuente-mediana;
+            padding: 3rem;
+            margin-right: 0;
+        }
+    }
+
+    .nav-item a:hover {
+        text-shadow: none;
+    }
+
+    .offcanvas-body {
+        text-align: center;
+    }
+
+    .btn-close {
+        width: 5rem;
+        height: 5rem;
+        opacity: 1;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon  {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+
+
+/* PARALLAX */
+
+.parallas .main .texto {
+    margin:0 auto
+}
+
+.parallax{
+    grid-area: parallax;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 700px;
+	width: 100%;
+	position: relative;
+    
+}
+
+.interior {
+    display: flex;
+    flex-direction: column;
+	position: absolute;
+	text-align:justify;
+    padding: 2rem;
+	top:50%;
+
+    h1 {
+        font-size: $fuente-xxl;
+        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.801);
+        color: #353535;
+    }
+
+    p {
+        font-size: $fuente-mediana;
+        color: #202020;
     }
 
 }
 
-.nav-item a:hover {
-    color: $color-negro;
-    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.651)
-    }
+//IMAGEN PARALLAX
+
+.imgParallax {
+    background-image: url('https://i.ibb.co/4F2cvh8/fondoparaparallax.png');
+}
 
 
 
@@ -57,7 +130,6 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
 }
 
 .cajaIndex {
@@ -75,7 +147,7 @@
 
     img:hover {
         transform: scale(1.1);
-        transition : .2s;     
+        transition : all .2s;     
     }
 
     p {
@@ -101,6 +173,7 @@
         filter: opacity(40%);
     }
 }
+
 
 
 /*CARDS INDEX*/
@@ -132,57 +205,15 @@
     }
 
     .card-body a {
-        @extend .estilosBotones
+        @extend .estilosBotones;
+    }
+
+    .card-body a:hover {
+        box-shadow: 0 3px 10px #04b3b9e1;
     }
 
 }
 
-
-/* PARALLAX */
-
-.parallas .main .texto {
-    margin:0 auto
-}
-
-.parallax{
-    grid-area: parallax;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:cover;
-	height: 700px;
-	width: 100%;
-	position: relative
-    
-}
-
-.interior {
-    display: flex;
-    flex-direction: column;
-	position: absolute;
-	text-align:justify;
-    padding: 2rem;
-	top:50%;
-
-    h1 {
-        font-size: $fuente-xxl;
-        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.651);
-        color: #353535;
-    }
-
-    p {
-        font-size: $fuente-mediana;
-        color: #2b2a2a;
-    }
-
-}
-
-
-//IMAGEN PARALLAX
-
-.imgParallax {
-    background-image: url('https://i.ibb.co/JHW5q6b/Dise-o-sin-t-tulo.jpg')
-}
 
 
 /* GRILLA INDEX Y MEDIA QUERIES */
@@ -223,6 +254,7 @@
     .contenedorCajasIndex {
         margin-bottom: 5rem;
         background-image: url('https://i.ibb.co/4Rbt4zp/fondopantallachica-2.jpg');
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -239,6 +271,7 @@
 }
 
 
+
 /* FOOTER */
 
 .footer {
@@ -253,6 +286,11 @@
         margin-right: 2rem;
         margin-top: 1rem;
     
+    }
+
+    .redesFooter a img:hover {
+        opacity: 20%;
+        transition: all .2s;
     }
 
     .declaracion {

@@ -1,13 +1,47 @@
-/* FORMULARIO */
+/* TITULO FORMULARIO */
 
-.formularioContacto {
-    
-    background-size: cover;
+.tituloFormulario {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    h1 {
+        color: $color-blanco;
+        font-size: $fuente-grande;
+        text-shadow: 2px 3px 5px $color-negro;
+    }
 }
 
+
+
+/* FORMULARIO */
+
 .formulario {
-    margin: 6rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    margin-top: 15rem;
     padding: 3rem;
+    width: 600px;
+    background-color: #03979D;
+    border-radius: .4rem;
+    box-shadow: 7px 13px 37px #000;
+
+    label {
+        color: $color-blanco;
+        text-shadow: 2px 3px 5px $color-negro;
+    }
+
+    input {
+        border: none;
+        border-radius: .4rem;
+        background-color: #0AC7CE;
+    }
+
+    textarea {
+        border: none;
+        border-radius: .4rem;
+        background-color: #0AC7CE;    
+    }
+    
 }
 
 
@@ -15,31 +49,23 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
+/* BOTON ENVIAR */
+
 .botonEnviar {
+    width: 10rem;
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    font-size: 1.2rem;
+    font-size: $fuente-grande - .6rem;
     color: #000;
-    background-color: #fcfcfc;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFF4;
     @extend .estilosBotones;
-
-    :hover {
-        color:#fcfcfc;
-        background-color:#292826;
-        transition: all .2s;
-    }
 }
 
-/* TEXTO - TITULOS */
-
-.titulos {
-    text-align: center;
-    margin-top: 15rem;
-    margin-bottom: 2rem;
-
-    h1 {
-        color: #292826;
-    }
+.botonEnviar:hover {
+    color:#fcfcfc;
+    background-color:#024d50;
+    transition: all .2s;
 }
