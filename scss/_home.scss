@@ -255,15 +255,18 @@
 
     .contenedorCajasIndex {
         margin-bottom: 5rem;
-        background-image: url('https://i.ibb.co/4Rbt4zp/fondopantallachica-2.jpg');
+        margin-top: 15rem;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .cajaIndex {
-        width:200px;
-        margin-top: 10rem;
-        padding: 0;
+        width: 225px;
+        padding: 3rem;
+    }
+
+    .cardsIndex {
+        background-image: linear-gradient(to bottom, $bg-body, #03979D);
     }
 
     .parallax {
@@ -284,8 +287,8 @@
     grid-area: footer; 
 
     .redesFooter a img {
-        width: 4rem;
-        margin-right: 2rem;
+        width: 6rem;
+        padding: 1rem;
         margin-top: 1rem;
     
     }
@@ -297,13 +300,20 @@
 
     .declaracion {
         margin-top: 2rem;
-        font-size: $fuente-mediana; 
+        font-size: $fuente-chica + .2rem; 
         
         p { color: map-get($paletaDeColores, colorLightGray);
     }
 }
 
 @media screen and (max-width: 768px) {
+    
+    .redesFooter {
+        a img {
+            width: 5.5rem;
+        }
+    }
+    
     .declaracion {
         font-size: $fuente-chica !important;
     }

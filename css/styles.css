@@ -233,14 +233,16 @@ label {
   }
   .contenedorCajasIndex {
     margin-bottom: 5rem;
-    background-image: url("https://i.ibb.co/4Rbt4zp/fondopantallachica-2.jpg");
+    margin-top: 15rem;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .cajaIndex {
-    width: 200px;
-    margin-top: 10rem;
-    padding: 0;
+    width: 225px;
+    padding: 3rem;
+  }
+  .cardsIndex {
+    background-image: linear-gradient(to bottom, #fcfcfc, #03979D);
   }
   .parallax {
     display: none;
@@ -258,8 +260,8 @@ label {
   grid-area: footer;
 }
 .footer .redesFooter a img {
-  width: 4rem;
-  margin-right: 2rem;
+  width: 6rem;
+  padding: 1rem;
   margin-top: 1rem;
 }
 .footer .redesFooter a img:hover {
@@ -268,12 +270,15 @@ label {
 }
 .footer .declaracion {
   margin-top: 2rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .footer .declaracion p {
   color: #CFCDCB;
 }
 @media screen and (max-width: 768px) {
+  .footer .redesFooter a img {
+    width: 5.5rem;
+  }
   .footer .declaracion {
     font-size: 1.2rem !important;
   }
@@ -357,8 +362,10 @@ label {
   background-color: #0AC7CE;
   box-shadow: 0 3px 10px hsla(0deg, 0%, 100%, 0.904);
 }
-.enlaceVideos h1 {
+.enlaceVideos p {
   color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0;
 }
 
 /* TITULO FORMULARIO */
@@ -378,10 +385,10 @@ label {
   margin-bottom: 10rem;
   margin-top: 15rem;
   padding: 3rem;
-  width: 600px;
+  width: 500px;
   background-color: #03979D;
   border-radius: 0.4rem;
-  box-shadow: 7px 13px 37px #000;
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.548);
 }
 .formulario label {
   color: #fff;
@@ -390,12 +397,18 @@ label {
 .formulario input {
   border: none;
   border-radius: 0.4rem;
-  background-color: #0AC7CE;
+  background-color: #edfbfc;
 }
 .formulario textarea {
   border: none;
   border-radius: 0.4rem;
-  background-color: #0AC7CE;
+  background-color: #edfbfc;
+}
+
+.form-control:focus {
+  border: none;
+  box-shadow: 1px 1px 15px rgba(252, 252, 252, 0.9058823529);
+  background-color: #edfbfc;
 }
 
 .textForm {

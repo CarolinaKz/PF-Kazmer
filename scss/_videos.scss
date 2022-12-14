@@ -35,7 +35,9 @@
         box-shadow: 0 3px 10px hsla(0, 0%, 100%, 0.904);
     }
 
-    h1 {
+    p {
         color: $color-blanco;
+        font-size: $fuente-grande;
+        margin-bottom: 0;
     }
 }
