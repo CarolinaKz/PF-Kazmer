@@ -31,7 +31,7 @@
     }
 
     a:hover {
-        background-color: #0AC7CE;
+        background-color: map-get($paletaDeColores, colorDarkTurquoise);
         box-shadow: 0 3px 10px hsla(0, 0%, 100%, 0.904);
     }
 

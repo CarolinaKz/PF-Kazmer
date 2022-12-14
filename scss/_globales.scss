@@ -33,6 +33,8 @@ label {
     color: #d3cac2;
 }
 
+
+
 //EXTEND
 .estilosBotones {
     border-radius: 5rem;
@@ -42,6 +44,20 @@ label {
     background-color: #03979D;
     border: none;
 }
+
+
+//MAP
+
+$paletaDeColores: (
+    colorLightGray: #CFCDCB,
+    colorSilver: #747474,
+    colorJet: #353535,
+    colorEerieBlack: #202020,
+    colorDarkTurquoise: #0AC7CE,
+    colorDarkBlueGreen: #03979D,
+);
+
+
 
 
 
