@@ -4,15 +4,18 @@
     grid-area: header;
 }
 
-/* LOGO */
-
 .header img {
     width: 200px;
-    margin-left: 4rem;
-} 
+    margin-left: 4rem; 
+} //LOGO
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    font-weight: bold;
+}
 
 .navbar {
     transition: all 0.5s;
+    --bs-navbar-toggler-focus-width: 0;
 }
 
 .navbar-scroll {
@@ -22,17 +25,17 @@
 
 .nav-item {
     a {
-        color: rgb(48, 48, 48);
+        color: rgb(20, 20, 20);
         font-size: $fuente-grande - .6rem;
         margin-right: 4rem;
     }
-}
 
-.nav-item a:hover {
-    color: $color-negro;
-    text-shadow: 3px 3px 10px #f8f8f8ec;
+    a:hover {
+        color: $color-negro;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.534);
+        transition: all .2s;
+    }
 }
-
 
 
 @media screen and (max-width: 991px) {
@@ -77,7 +80,7 @@
     margin:0 auto
 }
 
-.parallax{
+.parallax {
     grid-area: parallax;
 	background-attachment: fixed;
 	background-position: center;
@@ -144,11 +147,14 @@
     img {
         border-radius: 50%;
         box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.411);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: -webkit-transform .3s ease-out;
+        transition : -webkit-transform .3s ease-out;
     }
 
     img:hover {
         transform: scale(1.1);
-        transition : all .2s;     
     }
 
     p {
@@ -164,7 +170,6 @@
         margin-bottom: 4rem;
     }
 }
-
 
 .iconoFlecha {
     display: flex;
@@ -185,8 +190,8 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 5rem;
-    background-image: url('https://i.ibb.co/WD5Jy4v/fondocards.jpg');
-    background-repeat: no-repeat;
+    background-image: url('https://i.ibb.co/P57kcxR/fondoparacards.png');
+    background-size: cover;
     
     grid-area: cards;
     
@@ -194,11 +199,15 @@
         margin-bottom: 5rem;
         align-items: center;
         box-shadow: 1px 1px 10px map-get($paletaDeColores, colorJet);
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        -webkit-transition: -webkit-transform .3s ease-out;
+        transition : -webkit-transform .3s ease-out;
     }
 
     .card:hover {
-        transform: translateY(-3%);
-        transition: all .5s;
+        transform: translateY(-4%);
+        
     }
 
     
@@ -212,13 +221,21 @@
 
     .card-body a:hover {
         box-shadow: 0 3px 10px #04b3b9e1;
+        transition: all .2s;
     }
 
 }
 
+@media screen and (max-width: 992px) {
+
+    .cardsIndex {
+        background-image: linear-gradient(to bottom, $bg-body, #03979D);
+    }
+}
 
 
-/* GRILLA INDEX Y MEDIA QUERIES */
+
+/* GRILLA INDEX */
 
 .grillaIndex {
     display: grid;
@@ -265,10 +282,6 @@
         padding: 3rem;
     }
 
-    .cardsIndex {
-        background-image: linear-gradient(to bottom, $bg-body, #03979D);
-    }
-
     .parallax {
         display: none;
     }
@@ -294,7 +307,7 @@
     }
 
     .redesFooter a img:hover {
-        opacity: 20%;
+        opacity: 60%;
         transition: all .2s;
     }
 
@@ -303,8 +316,11 @@
         font-size: $fuente-chica + .2rem; 
         
         p { color: map-get($paletaDeColores, colorLightGray);
-    }
+        
+        }
+    } 
 }
+
 
 @media screen and (max-width: 768px) {
     
@@ -317,6 +333,4 @@
     .declaracion {
         font-size: $fuente-chica !important;
     }
-}  
-
-}
+} 

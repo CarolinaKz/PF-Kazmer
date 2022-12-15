@@ -15,34 +15,42 @@
 
 /* FORMULARIO */
 
-.formulario {
-    margin: auto;
-    margin-bottom: 10rem;
-    margin-top: 15rem;
-    padding: 3rem;
-    width: 500px;
-    background-color: map-get($paletaDeColores, colorDarkBlueGreen);
-    border-radius: .4rem;
-    box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.548);
+.formularioContacto {
+    display: flex;
+    justify-content: center;
 
-    label {
-        color: $color-blanco;
-        text-shadow: 2px 3px 5px $color-negro;
-    }
-
-    input {
-        border: none;
-        border-radius: .4rem;
-        background-color: map-get($paletaDeColores, colorLightTurquoise);
-    }
-
-    textarea {
-        border: none;
-        border-radius: .4rem;
-        background-color: map-get($paletaDeColores, colorLightTurquoise);  
-    }
+    .formulario {
+        width: 500px;
+        margin: 2rem;
+        margin-bottom: 10rem;
+        margin-top: 15rem;
+        padding: 5rem;
+        background-color: map-get($paletaDeColores, colorDarkBlueGreen);
+        border-radius: .2rem;
+        box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.925);
     
+        label {
+            color: $color-blanco;
+            text-shadow: 2px 3px 5px $color-negro;
+            font-size: $fuente-mediana;
+        }
+    
+        input {
+            border: none;
+            border-radius: .2rem;
+            background-color: map-get($paletaDeColores, colorLightTurquoise);
+            font-size: $fuente-mediana;
+        }
+    
+        textarea {
+            border: none;
+            border-radius: .2rem;
+            background-color: map-get($paletaDeColores, colorLightTurquoise);  
+        }
+        
+    }
 }
+
 
 .form-control:focus {
     border: none;
